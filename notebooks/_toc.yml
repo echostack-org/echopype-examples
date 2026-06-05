@@ -1,7 +1,7 @@
 format: jb-book
 root: index
 parts:
-  - caption: Getting started CW
+  - caption: Getting started
     numbered: False
     chapters:
       - file: getting_started

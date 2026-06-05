@@ -6,7 +6,7 @@ If you want to try these notebooks on Binder, follow instructions [here](https:/
 
 Please see the last cell in each notebook to see the version of Echopype and important dependencies the notebook was last run with.
 
-## Gallery
+<!-- show the gallery -->
 
 ```{datatemplate:yaml} gallery.yml
 :template: gallery-cards.jinja
