@@ -5,6 +5,7 @@ parts:
     numbered: False
     chapters:
       - file: getting_started
+      - file: getting_started_FM_TS
 
   - caption: Data processing
     numbered: False

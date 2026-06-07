@@ -2,30 +2,37 @@
   items:
     - name: Getting Started with Echopype
       website: https://echopype-examples.readthedocs.io/en/latest/getting_started.html
-      repository: https://github.com/OSOceanAcoustics/echopype-examples/blob/main/notebooks/getting_started.ipynb
+      repository: https://github.com/echostack-org/echopype-examples/blob/main/notebooks/getting_started.ipynb
       notebook: getting_started.ipynb
       summary: A minimum example to get started on Echopype functions.
       image: images/gallery/01_getting_started.png
+      
+    - name: Getting Started with Echopype for broadband TS
+      website: https://echopype-examples.readthedocs.io/en/latest/getting_started_FM_TS.html
+      repository: https://github.com/echostack-org/echopype-examples/blob/main/notebooks/getting_started_FM_TS.ipynb
+      notebook: getting_started_FM_TS.ipynb
+      summary: A minimum example to get started on Echopype functions for broadband target strength (TS) estimation.
+      image: images/gallery/11_getting_started_FM_TS.png
 
 - section: Data processing
   items:
     - name: Watching Eclipse from a Moored Echosounder
       website: https://echopype-examples.readthedocs.io/en/latest/OOI_eclipse.html
-      repository: https://github.com/OSOceanAcoustics/echopype-examples/blob/main/notebooks/OOI_eclipse.ipynb
+      repository: https://github.com/echostack-org/echopype-examples/blob/main/notebooks/OOI_eclipse.ipynb
       notebook: OOI_eclipse.ipynb
       summary: Pairing acoustic data from an upward-looking echosounder and shortwave irradiance measured by a pyrometer on a surface mooring to observe the movement response of zooplankton to a solar eclipse. (Not binder friendly.)
       image: images/gallery/02_OOI_eclipse.png
 
     - name: Seafloor Detection
       website: https://echopype-examples.readthedocs.io/en/latest/seafloor_detection.html
-      repository: https://github.com/OSOceanAcoustics/echopype-examples/blob/main/notebooks/seafloor_detection.ipynb
+      repository: https://github.com/echostack-org/echopype-examples/blob/main/notebooks/seafloor_detection.ipynb
       notebook: seafloor_detection.ipynb
       summary: Seafloor detection with echopype (two algorithms) and use of echoregions; compute a bottom line and mask below-bottom data.
       image: images/gallery/07_seafloor.png
 
     - name: Transient Noise Removal
       website: https://echopype-examples.readthedocs.io/en/latest/transient_noise.html
-      repository: https://github.com/OSOceanAcoustics/echopype-examples/blob/main/notebooks/transient_noise.ipynb
+      repository: https://github.com/echostack-org/echopype-examples/blob/main/notebooks/transient_noise.ipynb
       notebook: transient_noise.ipynb
       summary: Transient noise removal with echopype (two algorithms) and exploring the effects on Sv profiles.
       image: images/gallery/08_transient_noise.png
@@ -34,28 +41,28 @@
   items:
     - name: Ship Tracks Visualisation
       website: https://echopype-examples.readthedocs.io/en/latest/ship_tracks.html
-      repository: https://github.com/OSOceanAcoustics/echopype-examples/blob/main/notebooks/ship_tracks.ipynb
+      repository: https://github.com/echostack-org/echopype-examples/blob/main/notebooks/ship_tracks.ipynb
       notebook: ship_tracks.ipynb
       summary: Subselect sections of echo data based on ship GPS data embedded in the echosounder raw files to demonstrate the power of label-aware data processing based on standardized netCDF data model. (Not binder friendly.)
       image: images/gallery/03_subselection.png
 
     - name: Krill Frequency Differencing
       website: https://echopype-examples.readthedocs.io/en/latest/krill_freq_diff.html
-      repository: https://github.com/OSOceanAcoustics/echopype-examples/blob/main/notebooks/krill_freq_diff.ipynb
+      repository: https://github.com/echostack-org/echopype-examples/blob/main/notebooks/krill_freq_diff.ipynb
       notebook: krill_freq_diff.ipynb
       summary: Perform frequency-differencing analysis to identify fluid-like zooplankton scatterers (likely krill) in ship echosounder data, and compute nautical acoustic scattering coefficient (NASC) based on the classification. (Not binder friendly.)
       image: images/gallery/04_krill.png
 
     - name: Masking Echogram and Computing NASC
       website: https://echopype-examples.readthedocs.io/en/latest/hake_mask.html
-      repository: https://github.com/OSOceanAcoustics/echopype-examples/blob/main/notebooks/hake_mask.ipynb
+      repository: https://github.com/echostack-org/echopype-examples/blob/main/notebooks/hake_mask.ipynb
       notebook: hake_mask.ipynb
       summary: Incorporate an externally generated mask that identify the occurrence of Pacific hake in ship echosounder data, and compute NASC based on the masked outputs.
       image: images/gallery/05_NASC.png
 
     - name: Glider AZFP Processing
       website: https://echopype-examples.readthedocs.io/en/latest/glider_AZFP.html
-      repository: https://github.com/OSOceanAcoustics/echopype-examples/blob/main/notebooks/glider_AZFP.ipynb
+      repository: https://github.com/echostack-org/echopype-examples/blob/main/notebooks/glider_AZFP.ipynb
       notebook: glider_AZFP.ipynb
       summary: Process acoustic data from a Slocum glider by incorporating external position, motion, and environmental data and identify zooplankton shoals.
       image: images/gallery/06_glider.png

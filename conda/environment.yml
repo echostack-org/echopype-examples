@@ -10,6 +10,7 @@ dependencies:
   - cartopy
   - scipy
   - numba # Helps ensure a recent version is installed
+  - pooch
   # -- holoviz --
   - jupyter_bokeh
   - datashader
