@@ -13,14 +13,6 @@ DATASETS = {
             "crimac_tsf_reference_outputs.npz",
         ],
     },
-    "resample_to_geometry_example_data": {
-        "release": "example-data-v1",
-        "asset": "resample_to_geometry_example_data.zip",
-        "sha256": "PUT_SHA256_HERE",
-        "files": [
-            "2107RL_CW-D20211012-T141036.raw",
-        ],
-    },
 }
 
 def fetch_dataset(name: str, data_dir: Path = EXAMPLE_DATA_DIR) -> Path:
