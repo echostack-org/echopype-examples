@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+# Example datasets
+notebooks/example_data/*
+!notebooks/example_data/.gitkeep
+
 # Distribution / packaging
 .Python
 build/
