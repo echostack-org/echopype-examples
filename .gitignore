@@ -6,8 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
-# Example datasetss
-notebooks/example_data/ts_spectrum_example_data/
+# Example datasets
+notebooks/example_data/*
+!notebooks/example_data/.gitkeep
 
 # Distribution / packaging
 .Python
