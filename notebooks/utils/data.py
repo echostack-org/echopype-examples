@@ -18,6 +18,7 @@ DATASETS = {
     },
 }
 
+
 def fetch_dataset(name: str, data_dir: Path = EXAMPLE_DATA_DIR) -> Path:
     """Download and extract an example dataset if it is not available locally."""
     if name not in DATASETS:
@@ -38,9 +39,11 @@ def fetch_dataset(name: str, data_dir: Path = EXAMPLE_DATA_DIR) -> Path:
         registry={dataset["asset"]: f"sha256:{expected_sha256}"},
     )
 
-    # This verifies the cached zip hash.
-    # If the local zip is missing/stale/corrupted, Pooch redownloads it.
-    zip_path = Path(fetcher.fetch(dataset["asset"]))
+    print(f"Verifying dataset archive: {dataset['asset']}")
+
+    # Verify the cached zip archive. If it is missing or its checksum does
+    # not match the expected SHA256, Pooch automatically downloads a fresh copy.
+    zip_path = Path(fetcher.fetch(dataset["asset"], progressbar=True))
 
     local_extract_valid = (
         all(file.exists() for file in expected_files)
@@ -49,7 +52,6 @@ def fetch_dataset(name: str, data_dir: Path = EXAMPLE_DATA_DIR) -> Path:
     )
 
     if local_extract_valid:
-        print(f"Using local dataset: {dataset_dir}")
         return dataset_dir
 
     print(f"Extracting dataset: {name}")
@@ -68,5 +70,7 @@ def fetch_dataset(name: str, data_dir: Path = EXAMPLE_DATA_DIR) -> Path:
         )
 
     marker_file.write_text(expected_sha256 + "\n")
+
+    print("Dataset ready.")
 
     return dataset_dir
