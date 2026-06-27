@@ -15,3 +15,4 @@ parts:
     - file: glider_AZFP
     - file: seafloor_detection
     - file: transient_noise
+    - file: resample_to_geometry

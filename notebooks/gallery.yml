@@ -53,3 +53,10 @@
   notebook: transient_noise.ipynb
   summary: Transient noise removal with echopype (two algorithms) and exploring the effects on Sv profiles.
   image: images/gallery/08_transient_noise.png
+
+- name: Regridding using a predetermined Grid
+  website: https://echopype-examples.readthedocs.io/en/latest/resample_to_geometry.html
+  repository: https://github.com/OSOceanAcoustics/echopype-examples/blob/main/notebooks/resample_to_geometry.ipynb
+  notebook: resample_to_geometry.ipynb
+  summary: Regridding using a predetermined Grid
+  image: images/gallery/10_resample_to_geometry.png
