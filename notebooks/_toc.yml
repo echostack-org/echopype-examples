@@ -1,17 +1,23 @@
-# Table of contents
-# Learn more at https://jupyterbook.org/customize/toc.html
-
 format: jb-book
 root: index
 parts:
-  - caption: Demonstrations
-    numbered: True
+  - caption: Getting started
+    numbered: False
     chapters:
-    - file: getting_started
-    - file: OOI_eclipse
-    - file: ship_tracks
-    - file: krill_freq_diff
-    - file: hake_mask
-    - file: glider_AZFP
-    - file: seafloor_detection
-    - file: transient_noise
+      - file: getting_started
+
+  - caption: Processing
+    numbered: False
+    chapters:
+      - file: OOI_eclipse
+      - file: seafloor_detection
+      - file: transient_noise
+      - file: ship_tracks
+      - file: krill_freq_diff
+      - file: hake_mask
+      - file: glider_AZFP
+
+  - caption: Community showcase
+    numbered: False
+    chapters:
+      - file: community_showcase
