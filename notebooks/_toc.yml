@@ -6,16 +6,12 @@ parts:
     chapters:
       - file: getting_started
 
-  - caption: Data processing
+  - caption: Processing
     numbered: False
     chapters:
       - file: OOI_eclipse
       - file: seafloor_detection
       - file: transient_noise
-
-  - caption: Analysis workflows
-    numbered: False
-    chapters:
       - file: ship_tracks
       - file: krill_freq_diff
       - file: hake_mask

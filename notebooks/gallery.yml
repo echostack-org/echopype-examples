@@ -7,7 +7,7 @@
       summary: A minimum example to get started on Echopype functions.
       image: images/gallery/01_getting_started.png
 
-- section: Data processing
+- section: Processing
   items:
     - name: Watching Eclipse from a Moored Echosounder
       website: https://echopype-examples.readthedocs.io/en/latest/OOI_eclipse.html
@@ -30,8 +30,6 @@
       summary: Transient noise removal with echopype (two algorithms) and exploring the effects on Sv profiles.
       image: images/gallery/08_transient_noise.png
 
-- section: Analysis workflows
-  items:
     - name: Ship Tracks Visualisation
       website: https://echopype-examples.readthedocs.io/en/latest/ship_tracks.html
       repository: https://github.com/OSOceanAcoustics/echopype-examples/blob/main/notebooks/ship_tracks.ipynb
