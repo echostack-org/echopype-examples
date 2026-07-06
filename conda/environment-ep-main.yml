@@ -12,6 +12,7 @@ dependencies:
   - numba # Helps ensure a recent version is installed
   - numpy<2
   - pip
+  - pooch
   # -- holoviz --
   - jupyter_bokeh
   - datashader
