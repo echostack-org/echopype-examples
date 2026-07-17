@@ -9,7 +9,6 @@ parts:
   - caption: Processing
     numbered: False
     chapters:
-      - file: resample_to_geometry
       - file: OOI_eclipse
       - file: seafloor_detection
       - file: transient_noise
@@ -17,6 +16,7 @@ parts:
       - file: krill_freq_diff
       - file: hake_mask
       - file: glider_AZFP
+      - file: resample_to_geometry
 
   - caption: Community showcase
     numbered: False
