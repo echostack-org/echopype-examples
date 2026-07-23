@@ -16,6 +16,8 @@ parts:
       - file: krill_freq_diff
       - file: hake_mask
       - file: glider_AZFP
+      - file: resample_to_geometry
+      - file: onc_azfp_download_process
 
   - caption: Community showcase
     numbered: False

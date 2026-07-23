@@ -22,9 +22,9 @@ latex:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/OSOceanAcoustics/echopype-examples # Online location of your book
-  path_to_book: notebooks  # Optional path to your book, relative to the repository root
-  branch: main  # Which branch of the repository should be used when creating links (optional)
+  url: https://github.com/echostack-org/echopype-examples
+  path_to_book: notebooks
+  branch: main
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
