@@ -1,5 +1,5 @@
 # Dependecies for building the jupyter book
-jupyter-book<2.0
+jupyter-book
 sphinx>=7.4,<8
 myst-parser
 sphinxcontrib-datatemplates>=0.10.1
