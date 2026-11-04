@@ -3,7 +3,7 @@ channels:
   - conda-forge
   - nodefaults
 dependencies:
-  - python=3.12
+  - python=3.13
   - ipykernel
   - s3fs
   - geopandas
@@ -18,7 +18,7 @@ dependencies:
   - hvplot
   # -- echopype --
   # latest release
-  - echopype=0.11.1
+  - echopype=0.12.0
   # -- PyPI packages --
   - pip:
       - onc
