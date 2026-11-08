@@ -141,4 +141,5 @@ notebooks/conf.py
 # User-generated files
 notebooks/exports/
 notebooks/dask-worker-space/
+notebooks/example_data/ONC/
 *.DS_Store

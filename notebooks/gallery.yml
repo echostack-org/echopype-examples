@@ -4,8 +4,15 @@
       website: getting_started.html
       repository: https://github.com/echostack-org/echopype-examples/blob/main/notebooks/getting_started.ipynb
       notebook: getting_started.ipynb
-      summary: A minimum example to get started on Echopype functions.
-      image: images/gallery/01_getting_started.png
+      summary: A minimum example for converting, calibrating, and visualizing CW volume backscattering strength (Sv) data with echopype.
+      image: images/gallery/getting_started.png
+
+    - name: Getting Started with BI500 Data
+      website: BI500_getting_started.html
+      repository: https://github.com/echostack-org/echopype-examples/blob/main/notebooks/BI500_getting_started.ipynb
+      notebook: BI500_getting_started.ipynb
+      summary: Convert and process multi-channel BI500 acoustic data with echopype.
+      image: images/gallery/BI500_getting_started.png
 
 - section: Processing
   items:
@@ -14,56 +21,70 @@
       repository: https://github.com/echostack-org/echopype-examples/blob/main/notebooks/OOI_eclipse.ipynb
       notebook: OOI_eclipse.ipynb
       summary: Pairing acoustic data from an upward-looking echosounder and shortwave irradiance measured by a pyrometer on a surface mooring to observe the movement response of zooplankton to a solar eclipse. (Not binder friendly.)
-      image: images/gallery/02_OOI_eclipse.png
+      image: images/gallery/OOI_eclipse.png
 
     - name: Seafloor Detection
       website: seafloor_detection.html
       repository: https://github.com/echostack-org/echopype-examples/blob/main/notebooks/seafloor_detection.ipynb
       notebook: seafloor_detection.ipynb
       summary: Seafloor detection with echopype (two algorithms) and use of echoregions; compute a bottom line and mask below-bottom data.
-      image: images/gallery/07_seafloor.png
+      image: images/gallery/seafloor.png
 
     - name: Transient Noise Removal
       website: transient_noise.html
       repository: https://github.com/echostack-org/echopype-examples/blob/main/notebooks/transient_noise.ipynb
       notebook: transient_noise.ipynb
       summary: Transient noise removal with echopype (two algorithms) and exploring the effects on Sv profiles.
-      image: images/gallery/08_transient_noise.png
+      image: images/gallery/transient_noise.png
 
     - name: Ship Tracks Visualisation
       website: ship_tracks.html
       repository: https://github.com/echostack-org/echopype-examples/blob/main/notebooks/ship_tracks.ipynb
       notebook: ship_tracks.ipynb
       summary: Subselect sections of echo data based on ship GPS data embedded in the echosounder raw files to demonstrate the power of label-aware data processing based on standardized netCDF data model. (Not binder friendly.)
-      image: images/gallery/03_subselection.png
+      image: images/gallery/subselection.png
 
     - name: Krill Frequency Differencing
       website: krill_freq_diff.html
       repository: https://github.com/echostack-org/echopype-examples/blob/main/notebooks/krill_freq_diff.ipynb
       notebook: krill_freq_diff.ipynb
       summary: Perform frequency-differencing analysis to identify fluid-like zooplankton scatterers (likely krill) in ship echosounder data, and compute nautical acoustic scattering coefficient (NASC) based on the classification. (Not binder friendly.)
-      image: images/gallery/04_krill.png
+      image: images/gallery/krill.png
 
     - name: Masking Echogram and Computing NASC
       website: hake_mask.html
       repository: https://github.com/echostack-org/echopype-examples/blob/main/notebooks/hake_mask.ipynb
       notebook: hake_mask.ipynb
       summary: Incorporate an externally generated mask that identify the occurrence of Pacific hake in ship echosounder data, and compute NASC based on the masked outputs.
-      image: images/gallery/05_NASC.png
+      image: images/gallery/NASC.png
 
     - name: Glider AZFP Processing
       website: glider_AZFP.html
       repository: https://github.com/echostack-org/echopype-examples/blob/main/notebooks/glider_AZFP.ipynb
       notebook: glider_AZFP.ipynb
       summary: Process acoustic data from a Slocum glider by incorporating external position, motion, and environmental data and identify zooplankton shoals.
-      image: images/gallery/06_glider.png
+      image: images/gallery/glider.png
 
     - name: Resample Channels to a Common Range Geometry
       website: resample_to_geometry.html
       repository: https://github.com/echostack-org/echopype-examples/blob/main/notebooks/resample_to_geometry.ipynb
       notebook: resample_to_geometry.ipynb
       summary: Resample acoustic variables across channels to a reference channel geometry or a custom ping-dependent range grid.
-      image: images/gallery/10_resample_to_geometry.png
+      image: images/gallery/resample_to_geometry.png
+
+    - name: Single Transect Data Organization
+      website: single_transect_data_organization.html
+      repository: https://github.com/echostack-org/echopype-examples/blob/main/notebooks/single_transect_data_organization.ipynb
+      notebook: single_transect_data_organization.ipynb
+      summary: Single transect data organization for creating interoperable machine learning datasets for echogram classification tasks.
+      image: images/gallery/single_transect_data_organization.png
+
+    - name: Download and Process ONC AZFP Data
+      website: onc_azfp_download_process.html
+      repository: https://github.com/echostack-org/echopype-examples/blob/main/notebooks/onc_azfp_download_process.ipynb
+      notebook: onc_azfp_download_process.ipynb
+      summary: Download raw AZFP data from Ocean Networks Canada, calibrate it with Echopype, convert range to depth, and compute depth-gridded MVBS.
+      image: images/gallery/onc_azfp_download_process.png
 
 - section: Community showcase
   items: []
