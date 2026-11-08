@@ -1,24 +1,23 @@
-name: echopype_examples
+name: echopype-examples
 channels:
   - conda-forge
   - nodefaults
 dependencies:
-  - python=3.12
+  - python=3.13
   - ipykernel
   - s3fs
   - geopandas
   - cartopy
   - scipy
-  - numba # Helps ensure a recent version is installed
+  - numba
+  - numpy
   - pip
-  # -- holoviz --
   - jupyter_bokeh
   - datashader
   - holoviews
   - hvplot
-  # -- echopype --
-  # latest release
-  - echopype=0.11.1
-  # -- PyPI packages --
   - pip:
+      - echopype
+      - echoregions
+      - echoshader
       - onc
