@@ -1,0 +1,77 @@
+storage_chunks:
+  ping_time: 64
+  range_sample: 4096
+
+scaling:
+  file_counts: [1, 20]
+
+benchmark:
+  rounds: 3
+  iterations: 1
+  warmup_rounds: 1
+
+datasets:
+  ek80_hake:
+    sonar_model: EK80
+    waveform_mode: CW
+    encode_mode: power
+    channel: WBT 400142-15 ES70-7C_ES
+    depth_offset: 9.8
+    manifest: manifest.csv
+
+profiles:
+  zarr_threaded_2:
+    backend: dask
+    scheduler: threads
+    num_workers: 2
+
+chunk_configs:
+  medium:
+    ping_time: 64
+    range_sample: 4096
+
+  large:
+    ping_time: 256
+    range_sample: 16384
+
+# other configurations
+
+# quick demonstration (one timed execution per case):
+# benchmark:
+#   rounds: 1
+#   iterations: 1
+#   warmup_rounds: 0
+#
+# Larger scaling experiment (requires at least 100 manifest entries):
+# scaling:
+#   file_counts: [1, 5, 10, 20, 100]
+#
+# Additional backend profiles (add under profiles):
+#   numpy:
+#     backend: numpy
+#     scheduler: synchronous
+#   memory_threaded_2:
+#     backend: dask_memory
+#     scheduler: threads
+#     num_workers: 2
+#   zarr_threaded_4:
+#     backend: dask
+#     scheduler: threads
+#     num_workers: 4
+#
+# Additional chunk configurations (add under chunk_configs):
+#   small:
+#     ping_time: 64
+#     range_sample: 4096
+#   intermediate:
+#     ping_time: 128
+#     range_sample: 4096
+#   extra_large:
+#     ping_time: 384
+#     range_sample: 32768
+#   full_range:
+#     ping_time: 128
+#     range_sample: -1
+#   auto:
+#     ping_time: auto
+#     range_sample: auto
