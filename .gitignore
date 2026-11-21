@@ -6,6 +6,16 @@ __pycache__/
 # C extensions
 *.so
 
+# User-generated files
+notebooks/exports/
+notebooks/dask-worker-space/
+
+# Local example datasets
+notebooks/example_data/*.zip
+notebooks/example_data/ts_spectrum_example_data/
+
+*.DS_Store
+
 # Distribution / packaging
 .Python
 build/
