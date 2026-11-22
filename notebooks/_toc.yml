@@ -21,6 +21,12 @@ parts:
       - file: single_transect_data_organization
       - file: onc_azfp_download_process
 
+  - caption: Benchmarks
+    numbered: False
+    chapters:
+      - file: benchmark/basic_seafloor/benchmark
+        title: Basic seafloor detection benchmark
+
   - caption: Community showcase
     numbered: False
     chapters:
